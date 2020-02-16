@@ -1,0 +1,236 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* *은 모든 사이즈를 설정하는 것 */
+html{
+    font-size: 10px;
+}
+body{
+    min-width: 1060px;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-family: Roboto, Avenir, sans-serif;  
+}
+a{
+    text-decoration: none;
+}
+
+/* Header */
+.header{
+    background-color:#053d21;
+    height: 72px;
+    padding: 15px 0 4px;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+.container-float{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+.container-float::after{
+    display: block;
+    content: '';
+    clear: both;
+
+}
+.log{
+    margin: 0;
+    color: white;
+    position: absolute;
+    top : -10px;
+    left : 0;
+    padding-left: inherit;
+}
+.nav{
+    text-align: right;
+}
+.list{
+    margin: 0;
+    font-size: 0;
+}
+.list-item{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.list-item a{
+    color:white;
+    display: block;
+    padding: 10px;
+}
+.list-item a:hover{
+    color: #c9f0dd;
+}
+/* Main */
+.main-title{
+    font-weight: 500;
+    margin: 40px 0 20px 0;
+    font-size: 3.2rem;
+    letter-spacing: -1px;
+}
+.hero-section{
+    background-color: white;
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 1px solid #cfe3dc;
+}
+.hero-section .intro_desc{
+    margin: 40px auto 50px;
+    font-size: 3.6rem;
+    color: black;
+    width: 700px;
+    font-weight: 700;
+}
+.cta{
+    display: block;
+    padding: 20px 50px;
+    border-radius: 8px;
+    background-color: #44b78b;
+    color: white;
+    width: 300px;
+    margin: 0 auto 40px;
+}
+.hero-cta:hover{
+    background-color: #51be95;
+}
+.main-content{
+    float: left;
+    width: 70%;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.main-start{
+    grid-column: 1 / 3;
+    padding: 0 10px;
+}
+/* mailing -content */
+
+.mailing-title > a{
+    color: #44b78b;
+}
+.mailing-layout{
+    padding: 10px;
+}
+.mailing-desc{
+    margin: 0 0 10px;
+}
+.mailing-form{
+    margin: 0 0 20px;
+    position: relative;
+}
+.mailing-form > label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background-color: grey;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+}
+.mailing-form > input{
+    margin: 10px 0;
+}
+input[type="email"]{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #cfe3dc;
+    height: 5rem;
+    padding: 6px 80px 8px 10px;
+}
+.mailing-form-btn{
+    position: absolute;
+    top:30%;
+    right: 10px;
+    border:0;
+    background: transparent;
+    color: #44b78b;
+    cursor: pointer;
+}
+/* side content */
+
+.side-content{
+    /* background-color: lightgoldenrodyellow; */
+    float: right;
+    width: 30%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-left: 1px solid #cfe3dc;
+}
+.side-content a:hover{
+    color: #cfe3dc;
+}
+
+.container-side-cta{
+    place-self: center;
+    position: relative;
+}
+.container-side-cta .more{
+    color: #44b78b;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.side-cta:hover{
+    background-color: #51be95;
+}
+.latest-news{
+    padding: 20px;
+}
+.latest-news > h2{
+    border-bottom: 1px solid #cfe3dc;
+    /* color: #44b78b; */
+}
+.news-main{
+    line-height: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.news-title > a{
+     color: #44b78b;
+}
+.get-involoved{
+    padding: 20px;
+}
+.get-involoved > h2{
+    border-bottom: 1px solid #cfe3dc;
+}
+.list-communities{
+    line-height: 3rem;
+    margin: 0;
+}
+.community-title > a{
+    color: #44b78b;
+}
+.list-communities > dt{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.list-communities > dd{
+    margin: 2px 0 0 0;
+    font-size: 1rem;
+}
+.more::after{
+    content: " >>";
+}
+/* Content-info */
+.content-info{
+    background-color: green;
+}
+.link{
+    background-color: lightgreen;
+}
+.footer{
+    background-color: purple;
+}
